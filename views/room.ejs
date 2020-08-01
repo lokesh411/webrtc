@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBRTC</title>
+    <style>
+        .video-grid-container {
+            display: flex;
+        }
+
+        .video-grid {
+            height: 400px;
+            width: 400px;
+            margin: 10px;
+        }
+    </style>
+    <script type="text/javascript">
+        const roomId = "<%= roomId %>";
+        console.log('roomId ::: ', roomId);
+    </script>
+    <script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js" defer></script>
+    <script src="/socket.io/socket.io.js" defer ></script>
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <h1 id="people-number">1 people in the room</h1>
+    <div id="video-grid" class="video-grid-container"></div>
+</body>
+
+</html>
