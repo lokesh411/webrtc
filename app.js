@@ -29,4 +29,6 @@ io.on('connection', (socket) => {
     })
 })
 
-server.listen(4000, () => console.log('Running in 4k'));
+const PORT = process.env.PORT
+
+server.listen(PORT, () => console.log('Running in 4k + ' + PORT));
